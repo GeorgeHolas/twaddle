@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Twaddle
+
+Twaddle is a modern chat application built with Next.js 14, React, and MongoDB. It allows users to create accounts, chat with friends, and join group conversations. The app features real-time messaging using Pusher, image uploads with Cloudinary, and authentication with Next-Auth.
+
+## Features
+
+- **User authentication** with email and password
+- **One-on-one and group chat** functionality
+- **Real-time messaging** with Pusher
+- **Image upload and display** with Cloudinary
+- **Responsive design** for desktop and mobile devices
+- **Dark mode** support
+
+## Technologies Used
+
+- **Next.js 14** (React, Server Components)
+- **MongoDB** (with Mongoose)
+- **Pusher** (for real-time messaging)
+- **Cloudinary** (for image uploads)
+- **Next-Auth** (for authentication)
+- **Tailwind CSS** (for styling)
+- **React Hook Form** (for form handling)
+- **React Hot Toast** (for notifications)
 
 ## Getting Started
 
-First, run the development server:
+### Clone the repository:
 
 ```bash
+git clone https://github.com/your-username/twaddle.git
+Install dependencies:
+bash
+Copy code
+cd twaddle
+npm install
+Set up environment variables:
+Create a .env.local file in the root directory and add the following variables:
+
+env
+Copy code
+MONGO_URI=<your-mongodb-uri>
+NEXT_PUBLIC_PUSHER_APP_KEY=<your-pusher-app-key>
+PUSHER_APP_ID=<your-pusher-app-id>
+PUSHER_SECRET=<your-pusher-secret>
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
+CLOUDINARY_API_KEY=<your-cloudinary-api-key>
+CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
+NEXTAUTH_SECRET=<your-nextauth-secret>
+Start the development server:
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser to see the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+License
+This project is licensed under the MIT License.
