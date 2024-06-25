@@ -21,7 +21,7 @@ Twaddle is a modern chat application built with Next.js 14, React, and MongoDB. 
 - **React Hook Form** (for form handling)
 - **React Hot Toast** (for notifications)
 
-# Getting Started
+## Getting Started
 1. Clone the repository
 
 2. Install dependencies:
