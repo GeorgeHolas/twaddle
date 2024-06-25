@@ -26,11 +26,10 @@ Twaddle is a modern chat application built with Next.js 14, React, and MongoDB. 
 
 ### Clone the repository:
 
-```bash
 Install dependencies:
-bash
 cd twaddle
 npm install
+
 Set up environment variables:
 Create a .env.local file in the root directory and add the following variables:
 MONGO_URI=<your-mongodb-uri>
@@ -41,8 +40,8 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
 CLOUDINARY_API_KEY=<your-cloudinary-api-key>
 CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
 NEXTAUTH_SECRET=<your-nextauth-secret>
+
 Start the development server:
-bash
 npm run dev
 Open http://localhost:3000 in your browser to see the app.
 
